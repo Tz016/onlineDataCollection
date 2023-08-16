@@ -49,7 +49,7 @@ form.addEventListener("submit", function(event) {
   var availabilityValue=availability.value;
   console.log(availability);
   if (honorstypeValue=="Other (please specify in Description)"){
-    honorstypleValue="Others"
+    honorstypeValue="Others"
   }
   if (honorsfieldValue=="Other (please specify in Description)"){
     honorsfieldValue="Others"
