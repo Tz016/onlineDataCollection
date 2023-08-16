@@ -34,7 +34,7 @@
              -->
                     <option selected="selected" disabled="disabled" style='display: none' value=''></option>
                     <script>
-                        var options = ["Undergraduate Research Project", "Grant & Funding", "Conference Presentation", "Publication", "Academic Competition", "Non-academic Competition", "Academic Award & Honor", "Non-academic Award & Honor", "Scholarship & Fellowship", "Other (please specify)"];
+                        var options = ["Undergraduate Research Project", "Grant & Funding", "Conference Presentation", "Publication", "Academic Competition", "Non-academic Competition", "Academic Award & Honor", "Non-academic Award & Honor", "Scholarship & Fellowship", "Other (please specify in Description)"];
                         for (var i = 0; i < options.length; i++) {
                             document.write("<option class='options' value='" + options[i] + "'>" + options[i] + "</option>");
                         }
@@ -65,7 +65,7 @@
                             "Physics",
                             "Social Science",
                             "Self-Designed Honors Major (SDHM)",
-                            "Other (please specify)"
+                            "Other (please specify in Description)"
                         ];
 
                         for (var i = 0; i < majors.length; i++) {
@@ -87,8 +87,8 @@
                 <textarea type="text" id="description" rows=3
                     placeholder="Please briefly describe the honors"></textarea>
                 <br /><br />
-                <label for="netid">NetID</label> <br />
-                <input type="text" id="netid" placeholder="Please enter your NetID" />
+                <label for="netid">NYU NetID</label> <br />
+                <input type="text" id="netid" placeholder="Please enter your NYU NetID" />
                 <br /><br />
                 <label for="availability">Would you like to have your email information kept publicly accessible?*</label>
                 <select id="availability" required>
@@ -106,8 +106,8 @@
             </form>
         </div>
         <div class="text">
-            <p id="scusubmit" style='display: none'>Submit Successfully!<br>We will xxxx</p>
-            <p id="notes" style='display: block'>Notes:<br>xxxxxxxxx </p>
+            <p id="scusubmit" style='display: none'>Submit Successfully!</p>
+            <p id="notes" style='display: block'>Privacy Disclaimer:<br>This form is not operated through the NYU platform. To ensure the safety of your information, kindly refrain from providing any confidential data through this form.</p>
         </div>
     </div>
 

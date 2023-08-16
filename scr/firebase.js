@@ -48,10 +48,10 @@ form.addEventListener("submit", function(event) {
   var netidValue=netid.value;
   var availabilityValue=availability.value;
   console.log(availability);
-  if (honorstypeValue=="Other (please specify)"){
+  if (honorstypeValue=="Other (please specify in Description)"){
     honorstypleValue="Others"
   }
-  if (honorsfieldValue=="Other (please specify)"){
+  if (honorsfieldValue=="Other (please specify in Description)"){
     honorsfieldValue="Others"
   }
   // 将输入的内容存储到 Firebase Firestore 中

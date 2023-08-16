@@ -130,9 +130,6 @@ function setupP5() {
     // background(255,255,255,100);
     colorMode(HSB,360,100,100,100);
     var squareSizes = majors.map(major => sqrt(des[major].length) * 65); // Adjust as necessary
-  // var totalSize = squareSizes.reduce((a, b) => a + b);
-  //var gap = (min(width, height) - totalSize) / (majors.length + 1);
-  //var currentPos = gap;
   for (let i = 0; i < majors.length; i++) {
     let x, y;
     let s = squareSizes[i];
@@ -154,53 +151,8 @@ function setupP5() {
     poslist[i]=[majorobjects[i].x,majorobjects[i].y,majorobjects[i].s];
   }
   sketchInstance = this;
-  // ...
-  // Your existing setup code
-  // ...
 }
 
-// function setup() {
-//     //let canvas = createCanvas(500, 400);
-//     console.log(majors)
-//     let canvas = createCanvas(windowWidth, windowHeight*0.9);
-//     canvas.parent("canvasContainer");
-//     // background(255,255,255,100);
-//     colorMode(HSB,360,100,100,100);
-//     var squareSizes = majors.map(major => sqrt(des[major].length) * 65); // Adjust as necessary
-//   // var totalSize = squareSizes.reduce((a, b) => a + b);
-//   //var gap = (min(width, height) - totalSize) / (majors.length + 1);
-//   //var currentPos = gap;
-//   for (let i = 0; i < majors.length; i++) {
-//     let x, y;
-//     let s = squareSizes[i];
-//     let attempts = 0;
-
-//     do {
-//       x = random(s * sqrt(2) / 2, width - s * sqrt(2) / 2);
-//       y = random(s * sqrt(2) / 2, height - s * sqrt(2) / 2);
-//       attempts++;
-//       if (attempts > 10000) {
-//         majorobjects = [];
-//         i = 0;
-//         attempts = 0;
-//       }
-//     } while (isOverlapping(x, y, s));
-//     majorobjects[i] = new Major(majors[i], x, y, s, des[majors[i]]);
-//   }
-//   for(let i=0;i<majors.length;i++){
-//     poslist[i]=[majorobjects[i].x,majorobjects[i].y,majorobjects[i].s];
-//   }
-//   sketchInstance = this;
-//   }
-  
-
-
-  
-
-//function draw() {
-  //textSize(32);
-  //text('随便写写', mouseX, mouseY);
-  //fill(126, 10, 203,70)
   function draw() {
     background(255);
     for (let i = 0; i < majorobjects.length; i++) {
@@ -243,11 +195,6 @@ function setupP5() {
     }
     return false;
   }
-  
-  // Class and other functions remain the same
-
-
-
 
   class Major {
     constructor(major, x, y, s,des) {
